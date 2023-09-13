@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Wren - Perosonal Blog Website </title>
+  <meta name="title" content="Wren - Perosonal Blog Website">
+  <meta name="description" content="This is a blog html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/contenedor.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/pattern-2.svg">
+  <link rel="preload" as="image" href="./assets/images/pattern-3.svg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+  <header class="header">
+		<div class="logo">
+		<img class="logo1" src="./assets/images/logo/menor4.png" alt="">
+		</div>
+	
+		<input type="checkbox" id="toggle">
+		<label for="toggle"><img class="img2"  src="./assets/images/svg/menu.svg" alt="menu"></label>
+	
+	
+		<nav class="navigation">
+			<ul>
+				<li><a href="../index.html"> INICIO </a></li>
+				<li><a href="#"> SEGURIDAD INFORMATICA <i class=" fa-sharp fa-solid fa-caret-down"></i></a>
+				<ul>
+					<li><a href="">HACKING WIFI</a></li>
+					<li><a href="">HACKING WEB</a></li>
+					<li><a href="">MALWARE</a></li>
+					<li><a href="">OSINT</a></li>
+	
+				</ul>
+			</li>
+				<li><a href="#"> PROGRAMACION <i class=" fa-sharp fa-solid fa-caret-down"></i></a>
+				<ul>
+					<li><a href="">HTML</a></li>
+					<li><a href="">CSS</a></li>
+					<li><a href="">PYTHON</a></li>
+					<li><a href="">PHP</a></li>
+					<li><a href="">JAVASCRIPT</a></li>
+	
+				</ul>
+			</li>
+				<li><a href="">CTF <i class=" fa-sharp fa-solid fa-caret-down"></i></a>
+				<ul>
+					<li><a href="">HACKTHEBOX</a></li>
+					<li><a href="">TRYHACKME</a></li>
+					<li><a href="">VULNHUB</a></li>
+	
+				</ul>
+	
+				</li>
+				<li><a href="#"> ACERCA DE </a></li>
+			
+			
+			
+			</ul>
+	
+		</nav>
+
+	</header>
+
+  <main class="main-blog">
+    <div class="div-img">
+      <img class="img-principal" src="assets/images/articulos/hackthebox.png" alt="Imagen de hacking wifi" />
+  </div>
+    <h1 id="h1-main">Hacking Wifi</h1>
+    <h2>Navegando el Mundo Inalámbrico de Forma Ética: Pentesting WiFi y Hacking Ético</h2>
+    <P>En nuestro blog, te sumergirás en el intrigante mundo del pentesting WiFi y el hacking ético. Descubre cómo profesionales responsables identifican vulnerabilidades y fortalecen redes inalámbricas. Aprende técnicas esenciales para proteger tus propias conexiones. ¡Únete a nosotros y forja un ciberespacio más seguro! </P>
+
+    <h3>Cambiar dirección MAC de la tarjeta de red</h3>
+    <p>Cambiar la dirección MAC en auditorías WiFi es importante por las siguientes razones:<br>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;Anonimato: Ayuda a ocultar la identidad del auditor.<br>
+        
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;Evitar Restricciones: Permite eludir bloqueos o filtros en la red objetivo.<br>
+        
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;Simular Dispositivos Legítimos: Facilita la evaluación desde la perspectiva de un usuario autorizado.<br>
+        
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&middot;Evitar Registro de Actividad: Evita que tus acciones se asocien con tu dirección MAC real</p>
+
+      <p>La herramienta que vamos usar es <code class="code-command">&nbsp;macchanger&nbsp;</code>.</p>
+
+    <div class="imagenes-blog">
+      <img class="img-contenido-blog" src="./assets/images/articulos/hacking-wifi-002.png" alt="Imagen hacking wifi" />
+    </div>
+
+    <p>Para ver la MAC de una interface de red ejecutamos el comando <code class="code-command">&nbsp;macchanger -s &lt; nombre de la tarjeta de red &gt;&nbsp;</code></p>
+
+    <div class="imagenes-blog">
+      <img class="img-contenido-blog" src="./assets/images/articulos/hacking-wifi-003.png" alt="Imagen hacking wifi" />
+    </div>
+
+    <p>Una vez visto esto podemos usar el parametro <code class="code-command">-l</code> para ver las direcciones MAC asociadas a las 
+      diferentes organizaciones. Grepeamos para buscar la dirección MAC de "NATIONAL SECURITY AGENCY"</p>
+    <br>
+    <div class="imagenes-blog">
+      <img class="img-contenido-blog" src="./assets/images/articulos/hacking-wifi-004.png" alt="Imagen hacking wifi" />
+    </div>
+    <br>
+
+
+</main>
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
